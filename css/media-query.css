@@ -12,13 +12,13 @@
 
 }
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
 
     .display-md-none{
         display: none;
     }
 
-    .avatar-description{
+    .avatar-description:not(.main-bar .avatar-description){
         display: none;
     }
 
