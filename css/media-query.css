@@ -16,6 +16,16 @@
 }
 
 @media screen and (min-width: 768px){
+
+    /* .main-bar */
+
+    .main-bar__chat-content [class^=chat-text]{
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 992px){
+
     
     #webapp{
         padding: 50px 0;
@@ -27,12 +37,6 @@
         height: 100%;
     }
 
-    .avatar-description:not(.main-bar .avatar-description){
-        display: block;
-    }
-
-    /* .side-bar */
-
     .side-bar{
         width: 300px;
     }
@@ -41,9 +45,13 @@
         display: flex;
     }
 
-    /* .main-bar */
+
+    .avatar-description:not(.main-bar .avatar-description){
+        display: block;
+    }
+
 
     .main-bar__chat-content [class^=chat-text]{
-        max-width: 350px;
+        max-width: 450px;
     }
 }
