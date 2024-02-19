@@ -1,6 +1,7 @@
 :root{
 
     --green: #069689;
+    --gray:#DCDBD2;
     --lightgray: #EAEAEA;
     --light-darkgray: #F3EEEA;
     --lightblue: #8EDAFD;
@@ -28,4 +29,9 @@ img{
 
 body{
     font-family: 'Roboto', sans-serif;
+}
+
+#webapp{
+    height: 100vh;
+    background-color: var(--gray);
 }
