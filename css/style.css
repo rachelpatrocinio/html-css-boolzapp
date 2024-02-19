@@ -83,10 +83,12 @@ body{
 
 .container{
     background-color: var(--white);
+    overflow: hidden;
 }
 
 .container-sm{
     width: 100%;
+    height: 100vh;
 }
 
 /* .side-bar __  Header*/
@@ -177,14 +179,14 @@ body{
 
 .main-bar{
     flex-grow: 1;
-    border-left: 1px solid var(--darkgray);
-    height: 100%;
 }
 
 .main-bar__header{
     height: 50px;
     padding: 5px 10px;
     background-color: var(--light-darkgray);
+    border-left: 1px solid var(--darkgray);
+
 }
 
 .main-bar__menu{

@@ -1,5 +1,9 @@
 @media screen and (min-width: 576px){
 
+    .container-md{
+        height: 100vh;
+    }
+
     /* .side-bar */
 
     .side-bar{
@@ -17,6 +21,6 @@
     .container-lg{
         width: 80%;
         margin: 0 auto;
+        height: 100%;
     }
-
 }
