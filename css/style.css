@@ -22,6 +22,7 @@ ul,ol,menu{
 a{
     text-decoration: none;
     color: currentColor;
+    display: inline-block;
 }
 
 img{
@@ -57,10 +58,19 @@ body{
 
 /* Features */
 
+.avatar-img{
+    border-radius: 50%;
+}
+
 .avatar-description{
     margin-left: 5px;
     margin-right: auto;
     padding: 3px;
+    align-self: center;
+}
+
+.avatar-description strong{
+    font-size: 14px;
 }
 
 .avatar-description span{
@@ -84,6 +94,7 @@ body{
 .side-bar{
     display: none;
     width: 300px;
+    height: 100%;
     flex-shrink: 0;
 }
 
@@ -91,10 +102,6 @@ body{
     height: 50px;
     padding: 5px 10px;
     background-color: var(--light-darkgray);
-}
-
-.side-bar__header img{
-    border-radius: 50%;
 }
 
 .side-bar__menu i{
@@ -153,21 +160,25 @@ body{
     font-size: 12px;
 }
 
+/* -side-bar __ nav .chat-list */
+
+.chat-card a{
+    height: 70px;
+    padding: 10px;
+}
+
 /* .main-bar */
 
 .main-bar{
     flex-grow: 1;
     border-left: 1px solid var(--darkgray);
+    height: 100%;
 }
 
 .main-bar__header{
     height: 50px;
     padding: 5px 10px;
     background-color: var(--light-darkgray);
-}
-
-.main-bar__header img{
-    border-radius: 50%;
 }
 
 .main-bar__menu{
