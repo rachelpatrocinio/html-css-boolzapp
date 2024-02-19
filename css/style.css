@@ -55,6 +55,20 @@ body{
     gap: 10px;
 }
 
+/* Features */
+
+.avatar-description{
+    margin-left: 5px;
+    margin-right: auto;
+    padding: 3px;
+}
+
+.avatar-description span{
+    display: block;
+    font-size: 12px;
+    color: var(--darkgray);
+}
+
 /* Main */
 
 .container{
@@ -75,7 +89,7 @@ body{
 
 .side-bar__header{
     height: 50px;
-    padding: 5px;
+    padding: 5px 10px;
     background-color: var(--light-darkgray);
 }
 
@@ -84,6 +98,32 @@ body{
 }
 
 .side-bar__menu i{
+    font-size: 20px;
+    color: var(--darkgray);
+}
+
+/* .main-bar */
+
+.main-bar{
+    flex-grow: 1;
+    border-left: 1px solid var(--darkgray);
+}
+
+.main-bar__header{
+    height: 50px;
+    padding: 5px 10px;
+    background-color: var(--light-darkgray);
+}
+
+.main-bar__header img{
+    border-radius: 50%;
+}
+
+.main-bar__menu{
+    justify-self: flex-end;
+}
+
+.main-bar__menu i{
     font-size: 20px;
     color: var(--darkgray);
 }
