@@ -167,7 +167,7 @@ body{
     font-size: 12px;
 }
 
-/* -side-bar __ nav .chat-list */
+/* .side-bar__chat-list */
 
 .chat-card a{
     height: 70px;
@@ -187,6 +187,8 @@ body{
     height: 100%;
 }
 
+/* .main-bar__header */
+
 .main-bar__header{
     height: 50px;
     padding: 5px 10px;
@@ -203,3 +205,30 @@ body{
     font-size: 20px;
     color: var(--darkgray);
 }
+
+/* .main-bar form */
+
+.main-bar form{
+    height: 50px;
+    color: var(--darkgray);
+    background-color: var(--light-darkgray);
+    padding: 4px;
+}
+
+.main-bar form i{
+    font-size: 20px;
+    vertical-align: middle;
+    width: 50px;
+    flex-shrink: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+form input[type="text"]{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+
