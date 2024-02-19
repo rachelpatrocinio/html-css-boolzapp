@@ -1,0 +1,31 @@
+:root{
+
+    --green: #069689;
+    --lightgray: #EAEAEA;
+    --light-darkgray: #F3EEEA;
+    --lightblue: #8EDAFD;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,ol,menu{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
