@@ -2,6 +2,7 @@
     --white: #ffffff;
     --green: #069689;
     --gray:#DCDBD2;
+    --darkgray: #B1B1B1;
     --lightgray: #EAEAEA;
     --light-darkgray: #F3EEEA;
     --lightblue: #8EDAFD;
@@ -36,10 +37,53 @@ body{
     background: linear-gradient(to bottom, var(--green) 0, var(--green) 15vh,  var(--gray)15vh, var(--gray)100vh);
 }
 
-.main-content{
+/* Utilities */
+
+.flex{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.gap-10{
+    gap: 10px;
+}
+
+/* Main */
+
+.container{
     background-color: var(--white);
 }
 
 .container-sm{
     width: 100%;
+}
+
+/* .side-bar */
+
+.side-bar{
+    display: none;
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.side-bar__header{
+    height: 50px;
+    padding: 5px;
+    background-color: var(--light-darkgray);
+}
+
+.side-bar__header img{
+    border-radius: 50%;
+}
+
+.side-bar__menu i{
+    font-size: 20px;
+    color: var(--darkgray);
 }
