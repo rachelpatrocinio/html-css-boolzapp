@@ -167,6 +167,12 @@ body{
     padding: 10px;
 }
 
+.chat-time {
+    font-size: 10px;
+    color: var(--darkgray);
+    padding: 10px;
+}
+
 /* .main-bar */
 
 .main-bar{
