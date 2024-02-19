@@ -45,6 +45,10 @@
         display: flex;
     }
 
+    .side-bar__notification,
+    .side-bar__search-bar{
+        display: block;
+    }
 
     .avatar-description:not(.main-bar .avatar-description){
         display: block;
