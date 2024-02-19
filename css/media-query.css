@@ -1,6 +1,6 @@
 @media screen and (min-width: 576px){
 
-    .container-md{
+    .container-sm{
         height: 100vh;
     }
 
@@ -9,6 +9,24 @@
     .side-bar{
         display: block;
     }
+
+}
+
+@media screen and (min-width: 768px){
+
+    .display-md-none{
+        display: none;
+    }
+
+    .avatar-description{
+        display: none;
+    }
+
+    .side-bar{
+        width: 70px;
+    }
+
+
 
 }
 
@@ -22,5 +40,9 @@
         width: 80%;
         margin: 0 auto;
         height: 100%;
+    }
+
+    .main-bar__chat-content [class^=chat-text]{
+        max-width: 350px;
     }
 }

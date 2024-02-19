@@ -114,7 +114,7 @@ body{
 }
 
 .side-bar__header{
-    height: 50px;
+    height: 60px;
     padding: 5px 10px;
     background-color: var(--light-darkgray);
 }
@@ -177,6 +177,10 @@ body{
 
 /* .side-bar__chat-list */
 
+.chat-card{
+    border-bottom: 1px solid var(--light-darkgray);
+}
+
 .chat-card a{
     height: 70px;
     padding: 10px;
@@ -197,7 +201,7 @@ body{
 /* .main-bar__header */
 
 .main-bar__header{
-    height: 50px;
+    height: 60px;
     padding: 5px 10px;
     background-color: var(--light-darkgray);
     border-left: 1px solid var(--darkgray);
@@ -223,7 +227,7 @@ body{
 }
 
 .main-bar__chat-content [class^=chat-text]{
-    max-width: 350px;
+    max-width: 250px;
     padding: 15px;
     font-size: 12px;
     border-radius: 10px;
