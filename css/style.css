@@ -79,11 +79,11 @@ body{
     width: 100%;
 }
 
-/* .side-bar */
+/* .side-bar Header*/
 
 .side-bar{
     display: none;
-    width: 250px;
+    width: 300px;
     flex-shrink: 0;
 }
 
@@ -100,6 +100,42 @@ body{
 .side-bar__menu i{
     font-size: 20px;
     color: var(--darkgray);
+}
+
+/* .side-bar__body .notification */
+
+.notification .row{
+    padding: 10px;
+    background-color: var(--lightblue);
+}
+
+.notification .bell{
+    align-self: center;
+}
+
+.notification .bell i{
+    color: var(--lightblue);
+    background-color: var(--white);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 8px;
+    text-align: center;
+}
+
+.notification .bell__description{
+    margin-left: 5px;
+    padding: 3px;
+}
+
+.notification .bell__description strong{
+    font-size: 13px;
+}
+
+.notification .bell__description a{
+    display: block;
+    font-size: 12px;
+    text-decoration: underline;
 }
 
 /* .main-bar */
