@@ -57,6 +57,10 @@ body{
     align-items: center;
 }
 
+.align-self-end{
+    align-self: flex-end;
+}
+
 .gap-10{
     gap: 10px;
 }
@@ -215,6 +219,22 @@ body{
     background-image: url(../img/mine.jpg);
     padding: 50px;
     flex-grow: 1;
+    gap: 10px;
+}
+
+.main-bar__chat-content [class^=chat-text]{
+    max-width: 350px;
+    padding: 15px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.chat-text__green{
+    background-color: var(--lightgreen);
+}
+
+.chat-text__white{
+    background-color: var(--white);
 }
 
 /* .main-bar form */
