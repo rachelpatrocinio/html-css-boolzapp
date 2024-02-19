@@ -109,7 +109,7 @@ body{
 
 .side-bar{
     display: none;
-    width: 300px;
+    width: 70px;
     flex-shrink: 0;
 }
 

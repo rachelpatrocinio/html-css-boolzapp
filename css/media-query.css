@@ -1,19 +1,5 @@
 @media screen and (min-width: 576px){
 
-    .container-sm{
-        height: 100vh;
-    }
-
-    /* .side-bar */
-
-    .side-bar{
-        display: block;
-    }
-
-}
-
-@media screen and (max-width: 768px){
-
     .display-md-none{
         display: none;
     }
@@ -22,15 +8,14 @@
         display: none;
     }
 
+    /* .side-bar */
+
     .side-bar{
-        width: 70px;
+        display: block;
     }
-
-
-
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 768px){
     
     #webapp{
         padding: 50px 0;
@@ -41,6 +26,22 @@
         margin: 0 auto;
         height: 100%;
     }
+
+    .avatar-description:not(.main-bar .avatar-description){
+        display: block;
+    }
+
+    /* .side-bar */
+
+    .side-bar{
+        width: 300px;
+    }
+
+    .side-bar__menu{
+        display: flex;
+    }
+
+    /* .main-bar */
 
     .main-bar__chat-content [class^=chat-text]{
         max-width: 350px;
