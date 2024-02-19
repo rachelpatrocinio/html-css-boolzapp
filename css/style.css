@@ -1,5 +1,5 @@
 :root{
-
+    --white: #ffffff;
     --green: #069689;
     --gray:#DCDBD2;
     --lightgray: #EAEAEA;
@@ -33,5 +33,13 @@ body{
 
 #webapp{
     height: 100vh;
-    background-color: var(--gray);
+    background: linear-gradient(to bottom, var(--green) 0, var(--green) 15vh,  var(--gray)15vh, var(--gray)100vh);
+}
+
+.main-content{
+    background-color: var(--white);
+}
+
+.container-sm{
+    width: 100%;
 }
