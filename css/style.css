@@ -1,5 +1,6 @@
 :root{
     --white: #ffffff;
+    --lightgreen: #D5FABA;
     --green: #069689;
     --gray:#DCDBD2;
     --darkgray: #B1B1B1;
@@ -42,6 +43,10 @@ body{
 
 .flex{
     display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
 }
 
 .space-between{
@@ -111,18 +116,18 @@ body{
     color: var(--darkgray);
 }
 
-/* .side-bar__body __ .notification */
+/* .side-bar__notification */
 
-.notification .row{
+.side-bar__notification .row{
     padding: 10px;
     background-color: var(--lightblue);
 }
 
-.notification .bell{
+.side-bar__notification .bell{
     align-self: center;
 }
 
-.notification .bell i{
+.side-bar__notification .bell i{
     color: var(--lightblue);
     background-color: var(--white);
     aspect-ratio: 1 / 1;
@@ -132,29 +137,29 @@ body{
     text-align: center;
 }
 
-.notification .bell__description{
+.side-bar__notification .bell__description{
     margin-left: 5px;
     padding: 3px;
 }
 
-.notification .bell__description strong{
+.side-bar__notification .bell__description strong{
     font-size: 13px;
 }
 
-.notification .bell__description a{
+.side-bar__notification .bell__description a{
     display: block;
     font-size: 12px;
     text-decoration: underline;
 }
 
-/* .side-bar __ .search-bar */
+/* .side-bar__search-bar */
 
-.search-bar{
+.side-bar__search-bar{
     padding: 10px;
     background-color: var(--light-darkgray);
 }
 
-.search-bar input[type="search"]{
+.side-bar__search-bar input[type="search"]{
     width: 100%;
     border: none;
     border-radius: 5px;
@@ -179,6 +184,7 @@ body{
 
 .main-bar{
     flex-grow: 1;
+    height: 100%;
 }
 
 .main-bar__header{
