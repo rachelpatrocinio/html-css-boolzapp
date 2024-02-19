@@ -79,7 +79,7 @@ body{
     width: 100%;
 }
 
-/* .side-bar Header*/
+/* .side-bar __  Header*/
 
 .side-bar{
     display: none;
@@ -102,7 +102,7 @@ body{
     color: var(--darkgray);
 }
 
-/* .side-bar__body .notification */
+/* .side-bar__body __ .notification */
 
 .notification .row{
     padding: 10px;
@@ -136,6 +136,21 @@ body{
     display: block;
     font-size: 12px;
     text-decoration: underline;
+}
+
+/* .side-bar __ .search-bar */
+
+.search-bar{
+    padding: 10px;
+    background-color: var(--light-darkgray);
+}
+
+.search-bar input[type="search"]{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    font-size: 12px;
 }
 
 /* .main-bar */
