@@ -36,7 +36,7 @@ body{
 
 #webapp{
     height: 100vh;
-    background: linear-gradient(to bottom, var(--green) 0, var(--green) 15vh,  var(--gray)15vh, var(--gray)100vh);
+    background: linear-gradient(to bottom, var(--green) 0, var(--green) 150px,  var(--gray)150px, var(--gray)100vh);
 }
 
 /* Utilities */
