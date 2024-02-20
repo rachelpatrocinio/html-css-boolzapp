@@ -177,6 +177,10 @@ body{
     flex-shrink: 0;
 }
 
+.side-bar__search-bar:hover{
+    box-shadow: inset 0 0 10px var(--gray);
+}
+
 .side-bar__search-bar input[type="search"]{
     width: 100%;
     border: none;
@@ -194,6 +198,10 @@ nav{
 
 .chat-card{
     border-bottom: 1px solid var(--light-darkgray);
+}
+
+.chat-card a:hover{
+    box-shadow: inset 0 0 10px var(--gray);
 }
 
 .chat-card a{
@@ -253,6 +261,10 @@ nav{
 .main-bar__chat-content [class^=chat-text] span{
     color: var(--darkgray);
     font-size: 10px;
+}
+
+.main-bar__chat-content [class^=chat-text] i:hover{
+    color: var(--green);
 }
 
 .chat__dropdown li{
