@@ -7,6 +7,7 @@
     --lightgray: #EAEAEA;
     --light-darkgray: #F3EEEA;
     --lightblue: #8EDAFD;
+    --dark: #504f4f;
 }
 
 
@@ -97,6 +98,10 @@ body{
     color: var(--darkgray);
 }
 
+i:hover{
+    color: var(--dark);
+}
+
 /* Main */
 
 .container{
@@ -127,6 +132,10 @@ body{
 .side-bar__menu i{
     font-size: 20px;
     color: var(--darkgray);
+}
+
+.side-bar__menu i:hover{
+    color: var(--dark);
 }
 
 /* .side-bar__notification */
@@ -181,8 +190,12 @@ body{
     box-shadow: inset 0 0 10px var(--gray);
 }
 
+.side-bar__search-bar svg{
+    vertical-align: middle;
+}
+
 .side-bar__search-bar input[type="search"]{
-    width: 100%;
+    width: 90%;
     border: none;
     border-radius: 5px;
     padding: 5px 5px;
