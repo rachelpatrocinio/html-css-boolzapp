@@ -271,12 +271,12 @@ nav{
     background-color: var(--white);
     font-size: 14px;
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
-    /* opacity: 0; */
+    display: none;
 }
 
-/* .fa-angle-down:hover .chat__dropdown{
-    opacity: 1;
- } */
+.fa-angle-down:hover ~ .chat__dropdown{
+    display: block;
+}
 
 .chat-text__green{
     background-color: var(--lightgreen);
