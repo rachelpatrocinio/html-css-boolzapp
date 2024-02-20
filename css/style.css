@@ -234,7 +234,7 @@ body{
 }
 
 .main-bar__chat-content [class^=chat-text]{
-    max-width: 250px;
+    width: 60%;
     padding: 15px;
     font-size: 12px;
     border-radius: 10px;
