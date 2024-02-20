@@ -127,6 +127,10 @@ body{
 
 /* .side-bar__notification */
 
+.side-bar__notification{
+    flex-shrink: 0;
+}
+
 .side-bar__notification .row{
     padding: 10px;
     background-color: var(--lightblue);
@@ -166,6 +170,7 @@ body{
 .side-bar__search-bar{
     padding: 10px;
     background-color: var(--light-darkgray);
+    flex-shrink: 0;
 }
 
 .side-bar__search-bar input[type="search"]{
@@ -178,8 +183,8 @@ body{
 
 /* .side-bar__chat-list */
 
-.side-bar__chat-list{
-    height: 500px;
+nav{
+    flex-grow: 1;
     overflow: auto;
 }
 

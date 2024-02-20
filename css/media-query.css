@@ -15,7 +15,8 @@
     /* .side-bar */
 
     .side-bar{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 }
 
