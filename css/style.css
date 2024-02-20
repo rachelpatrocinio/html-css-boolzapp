@@ -65,6 +65,10 @@ body{
     gap: 10px;
 }
 
+.p-relative{
+    position: relative;
+}
+
 .text-center{
     text-align: center;
 }
@@ -250,6 +254,29 @@ nav{
     color: var(--darkgray);
     font-size: 10px;
 }
+
+.chat__dropdown li{
+    margin: 5px 0;
+    padding: 5px 15px;
+}
+
+.chat__dropdown li:hover{
+    background-color: var(--lightgray);
+}
+
+.chat__dropdown{
+    position: absolute;
+    top:30px;
+    right: 0;
+    background-color: var(--white);
+    font-size: 14px;
+    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
+    /* opacity: 0; */
+}
+
+/* .fa-angle-down:hover .chat__dropdown{
+    opacity: 1;
+ } */
 
 .chat-text__green{
     background-color: var(--lightgreen);
