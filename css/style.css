@@ -97,16 +97,13 @@ body{
 
 .container{
     background-color: var(--white);
+    width: 100%;
+    height: 100vh;
     overflow: hidden;
 }
 
 .container .row{
     height: 100%;
-}
-
-.container-sm{
-    width: 100%;
-    height: 100vh;
 }
 
 /* .side-bar __  Header*/
