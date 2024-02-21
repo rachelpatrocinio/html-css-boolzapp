@@ -305,6 +305,10 @@ body{
     border-bottom: 1px solid var(--light-darkgray);
 }
 
+.chat-time{
+    display: none;
+}
+
 .chat-card a:hover{
     box-shadow: inset 0 0 10px var(--gray);
 }

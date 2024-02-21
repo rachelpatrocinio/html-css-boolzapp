@@ -33,8 +33,12 @@
         display: block;
     }
 
+    .chat-time{
+        display: block;
+    }
+
     .toolbar__description{
         display: block;
     }
-    
+
 }
