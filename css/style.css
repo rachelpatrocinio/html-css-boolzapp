@@ -62,6 +62,10 @@ body{
     align-self: flex-end;
 }
 
+.align-self-start{
+    align-self: flex-start;
+}
+
 .gap-10{
     gap: 10px;
 }
@@ -117,19 +121,35 @@ body{
 }
 
 .message{
-    width: 60%;
+    max-width: 60%;
     padding: 15px;
     font-size: 12px;
     border-radius: 10px;
+}
+
+.message p{
+    margin-right: 3px;
 }
 
 .message.sent{
     background-color: var(--lightgreen);
 }
 
+.message,
+.message.sent ~ .message.sent,
+.message.recieved ~ .message.recieved{
+    margin: 3px 0;
+}
+
+.message.sent + .message.recieved,
+.message.recieved + .message.sent{
+    margin-top: 30px;
+}
+
 .message.recieved{
     background-color: var(--white);
 }
+
 
 .message i,
 .message span{
@@ -324,7 +344,6 @@ body{
     background-image: url(../img/mine.jpg);
     padding: 50px;
     flex-grow: 1;
-    gap: 10px;
     overflow: auto;
 }
 
