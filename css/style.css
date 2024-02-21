@@ -367,6 +367,10 @@ body{
     text-align: center;
 }
 
+.main-bar form i:hover{
+    color: var(--dark);
+}
+
 form input[type="text"]{
     border: none;
     border-radius: 5px;
