@@ -1,9 +1,5 @@
 @media screen and (min-width: 576px){
 
-    .display-md-none{
-        display: none;
-    }
-
     .avatar-description:not(.main-bar .avatar-description){
         display: none;
     }
@@ -37,12 +33,16 @@
         width: 300px;
     }
 
-    .side-bar__menu{
+    .side-bar__header .toolbar__menu{
         display: flex;
     }
 
     .side-bar__notification,
     .side-bar__search-bar{
+        display: block;
+    }
+
+    .toolbar__description{
         display: block;
     }
 

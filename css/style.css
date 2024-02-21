@@ -75,30 +75,44 @@ body{
 }
 
 /* Features */
+.toolbar{
+    height: 50px;
+    display: flex;
+    justify-content: space-between; 
+}
 
-.avatar-img{
+.toolbar__img{
     border-radius: 50%;
     width: 50px;
 }
 
-.avatar-description{
+.toolbar__description{
+    display: none;
     margin-left: 5px;
     margin-right: auto;
     padding: 3px;
     align-self: center;
 }
 
-.avatar-description strong{
-    font-size: 14px;
+.toolbar__description h1{
+    font-size: 16px;
 }
 
-.avatar-description span{
+.toolbar__description p{
     display: block;
     font-size: 12px;
     color: var(--darkgray);
 }
 
-i:hover{
+.toolbar__menu{
+    display: flex;
+    color: var(--darkgray);
+    font-size: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.toolbar__menu li:hover{
     color: var(--dark);
 }
 
@@ -124,24 +138,19 @@ i:hover{
 }
 
 .side-bar__header{
-    height: 60px;
     padding: 5px 10px;
     background-color: var(--light-darkgray);
 }
 
-.side-bar__menu i{
-    font-size: 20px;
-    color: var(--darkgray);
-}
-
-.side-bar__menu i:hover{
-    color: var(--dark);
+.side-bar__header .toolbar__menu{
+    display: none;
 }
 
 /* .side-bar__notification */
 
 .side-bar__notification{
     flex-shrink: 0;
+    display: none;
 }
 
 .side-bar__notification .row{
@@ -184,6 +193,7 @@ i:hover{
     padding: 10px;
     background-color: var(--light-darkgray);
     flex-shrink: 0;
+    display: none;
 }
 
 .side-bar__search-bar:hover{
@@ -234,7 +244,7 @@ nav{
     box-shadow: inset 0 0 10px var(--gray);
 }
 
-.chat-card a{
+.chat-card .toolbar{
     height: 70px;
     padding: 10px;
 }
@@ -254,20 +264,14 @@ nav{
 /* .main-bar__header */
 
 .main-bar__header{
-    height: 60px;
     padding: 5px 10px;
     background-color: var(--light-darkgray);
     border-left: 1px solid var(--darkgray);
     flex-shrink: 0;
 }
 
-.main-bar__menu{
-    justify-self: flex-end;
-}
-
-.main-bar__menu i{
-    font-size: 20px;
-    color: var(--darkgray);
+.main-bar__header .toolbar__description{
+    display: block;
 }
 
 /* main-bar__chat-content */

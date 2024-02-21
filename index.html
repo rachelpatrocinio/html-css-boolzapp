@@ -17,16 +17,18 @@
         <main class="container container-lg">
             <div class="row flex">
                 <div class="col side-bar">
-                    <header class="side-bar__header flex space-between">
-                        <img class="avatar-img" src="./img/avatar_io.jpg" alt="">
-                        <ul class="side-bar__menu flex align-center  gap-10 display-md-none">
-                            <li><a href="#"><i class="fa-solid fa-rotate-right"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-message"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></i></li>
-                        </ul>
+                    <header class="side-bar__header">
+                        <div class="toolbar">
+                            <img class="avatar-img" src="./img/avatar_io.jpg" alt="">
+                            <ul class="toolbar__menu">
+                                <li><a href="#"><i class="fa-solid fa-rotate-right"></i></a></li>
+                                <li><a href="#"><i class="fa-solid fa-message"></i></a></li>
+                                <li><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></i></li>
+                            </ul>
+                        </div>
                     </header>
 
-                    <div class="side-bar__notification display-md-none">
+                    <div class="side-bar__notification">
                         <div class="row flex">
                             <div class="col bell">
                                 <i class="fa-solid fa-bell-slash"></i>
@@ -38,107 +40,107 @@
                         </div>
                     </div>
 
-                    <div class="side-bar__search-bar display-md-none p-relative">
+                    <div class="side-bar__search-bar p-relative">
                         <input type="search" placeholder="Cerca o inizia una nuova chat" name="search" id="search-bar">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
 
-                    <nav>
-                        <ul class="side-bar__chat-list">
-                            <li class="chat-card">
-                                <a class="flex" href="#">
-                                    <img class="avatar-img" src="./img/avatar_1.jpg" alt="">
-                                    <div class="avatar-description">
-                                        <strong>Michele</strong>
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                    </div>
-                                    <p class="chat-time">16:15</p>
-                                </a>
-                            <li class="chat-card">
-                                <a class="flex" href="#">
-                                    <img class="avatar-img" src="./img/avatar_2.jpg" alt="">
-                                    <div class="avatar-description">
-                                        <strong>Fabio</strong>
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                    </div>
-                                    <p class="chat-time">16:05</p>
-                                </a>
-                            </li>
-                            <li class="chat-card">
-                                <a class="flex" href="#">
-                                    <img class="avatar-img" src="./img/avatar_3.jpg" alt="">
-                                    <div class="avatar-description">
-                                        <strong>Samuele</strong>
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                    </div>
-                                    <p class="chat-time">16:03</p>
-                                </a>
-                            </li>
-                            <li class="chat-card">
-                                <a class="flex" href="#">
-                                    <img class="avatar-img" src="./img/avatar_4.jpg" alt="">
-                                    <div class="avatar-description">
-                                        <strong>Alessandro B.</strong>
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                    </div>
-                                    <p class="chat-time">15:50</p>
-                                </a>
-                            </li>
-                            <li class="chat-card">
-                                <a class="flex" href="#">
-                                    <img class="avatar-img" src="./img/avatar_5.jpg" alt="">
-                                    <div class="avatar-description">
-                                        <strong>Alessandro L.</strong>
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                    </div>
-                                    <p class="chat-time">15:45</p>
-                                </a>
-                            </li>
-                            <li class="chat-card">
-                                <a class="flex" href="#">
-                                    <img class="avatar-img" src="./img/avatar_6.jpg" alt="">
-                                    <div class="avatar-description">
-                                        <strong>Claudia</strong>
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                    </div>
-                                    <p class="chat-time">15:50</p>
-                                </a>
-                            </li>
-                            <li class="chat-card">
-                                <a class="flex" href="#">
-                                    <img class="avatar-img" src="./img/avatar_7.jpg" alt="">
-                                    <div class="avatar-description">
-                                        <strong>Federico</strong>
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                    </div>
-                                    <p class="chat-time">15:45</p>
-                                </a>
-                            </li>
-                            <li class="chat-card">
-                                <a class="flex" href="#">
-                                    <img class="avatar-img" src="./img/avatar_8.jpg" alt="">
-                                    <div class="avatar-description">
-                                        <strong>Davide</strong>
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                    </div>
-                                    <p class="chat-time">15:22</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <ul class="side-bar__chat-list">
+                        <li class="chat-card">
+                            <a class="toolbar" href="#">
+                                <img class="toolbar__img" src="./img/avatar_1.jpg" alt="">
+                                <div class="toolbar__description">
+                                    <h1>Michele</h1>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <p class="chat-time">16:15</p>
+                            </a>
+                        <li class="chat-card">
+                            <a class="toolbar" href="#">
+                                <img class="toolbar__img" src="./img/avatar_2.jpg" alt="">
+                                <div class="toolbar__description">
+                                    <h1>Fabio</h1>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <p class="chat-time">16:05</p>
+                            </a>
+                        </li>
+                        <li class="chat-card">
+                            <a class="toolbar" href="#">
+                                <img class="toolbar__img" src="./img/avatar_3.jpg" alt="">
+                                <div class="toolbar__description">
+                                    <h1>Samuele</h1>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <p class="chat-time">16:03</p>
+                            </a>
+                        </li>
+                        <li class="chat-card">
+                            <a class="toolbar" href="#">
+                                <img class="toolbar__img" src="./img/avatar_4.jpg" alt="">
+                                <div class="toolbar__description">
+                                    <h1>Alessandro B.</h1>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <p class="chat-time">15:50</p>
+                            </a>
+                        </li>
+                        <li class="chat-card">
+                            <a class="toolbar" href="#">
+                                <img class="toolbar__img" src="./img/avatar_5.jpg" alt="">
+                                <div class="toolbar__description">
+                                    <h1>Alessandro L.</h1>
+                                    <p>Lorem ipsum dolor sit amet.</span>
+                                </div>
+                                <p class="chat-time">15:45</p>
+                            </a>
+                        </li>
+                        <li class="chat-card">
+                            <a class="toolbar" href="#">
+                                <img class="toolbar__img" src="./img/avatar_6.jpg" alt="">
+                                <div class="toolbar__description">
+                                    <h1>Claudia</h1>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <p class="chat-time">15:50</p>
+                            </a>
+                        </li>
+                        <li class="chat-card">
+                            <a class="toolbar" href="#">
+                                <img class="toolbar__img" src="./img/avatar_7.jpg" alt="">
+                                <div class="toolbar__description">
+                                    <h1>Federico</h1>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <p class="chat-time">15:45</p>
+                            </a>
+                        </li>
+                        <li class="chat-card">
+                            <a class="toolbar" href="#">
+                                <img class="toolbar__img" src="./img/avatar_8.jpg" alt="">
+                                <div class="toolbar__description">
+                                    <h1>Davide</h1>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <p class="chat-time">15:22</p>
+                            </a>
+                        </li>
+                    </ul>
                 </div> <!--side-bar-->
                 <div class="col main-bar flex flex-column">
-                    <header class="main-bar__header flex">
-                        <img class="avatar-img" src="./img/avatar_1.jpg" alt="">
-                        <div class="avatar-description">
-                            <strong>Michele</strong>
-                            <span>Ultimo accesso oggi alle 16:26</span>
+                    <header class="main-bar__header">
+                        <div class="toolbar">
+                            <img class="toolbar__img" src="./img/avatar_1.jpg" alt="">
+                            <div class="toolbar__description">
+                                <h1>Michele</h1>
+                                <p>Ultimo accesso oggi alle 16:26</p>
+                            </div>
+                            <ul class="toolbar__menu flex align-center  gap-10">
+                                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                <li><a href="#"><i class="fa-solid fa-paperclip"></i></a></li>
+                                <li><a href="#"></a><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                            </ul>
                         </div>
-                        <ul class="main-bar__menu flex align-center  gap-10">
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-paperclip"></i></a></li>
-                            <li><a href="#"></a><i class="fa-solid fa-ellipsis-vertical"></i></li>
-                        </ul>
                     </header>
                     <div class="main-bar__chat-content flex flex-column">
                         <div class="chat-text__green align-self-end flex p-relative">
