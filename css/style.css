@@ -116,6 +116,50 @@ body{
     color: var(--dark);
 }
 
+.message{
+    width: 60%;
+    padding: 15px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.message.sent{
+    background-color: var(--lightgreen);
+}
+
+.message.recieved{
+    background-color: var(--white);
+}
+
+.message i,
+.message span{
+    color: var(--dark);
+    font-size: 10px;
+}
+
+.message__dropdown{
+    position: absolute;
+    top:30px;
+    right: 0;
+    background-color: var(--white);
+    font-size: 14px;
+    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
+    display: none;
+}
+
+.message__dropdown li{
+    margin: 5px 0;
+    padding: 5px 15px;
+}
+
+.message__dropdown li:hover{
+    background-color: var(--lightgray);
+}
+
+.fa-angle-down:hover ~ .message__dropdown{
+    display: block;
+}
+
 /* Main */
 
 .container{
@@ -231,7 +275,7 @@ body{
 
 /* .side-bar__chat-list */
 
-nav{
+.side-bar__chat-list{
     flex-grow: 1;
     overflow: auto;
 }
@@ -282,54 +326,6 @@ nav{
     flex-grow: 1;
     gap: 10px;
     overflow: auto;
-}
-
-.main-bar__chat-content [class^=chat-text]{
-    width: 60%;
-    padding: 15px;
-    font-size: 12px;
-    border-radius: 10px;
-}
-
-.main-bar__chat-content [class^=chat-text] i,
-.main-bar__chat-content [class^=chat-text] span{
-    color: var(--darkgray);
-    font-size: 10px;
-}
-
-.main-bar__chat-content [class^=chat-text] i:hover{
-    color: var(--green);
-}
-
-.chat__dropdown li{
-    margin: 5px 0;
-    padding: 5px 15px;
-}
-
-.chat__dropdown li:hover{
-    background-color: var(--lightgray);
-}
-
-.chat__dropdown{
-    position: absolute;
-    top:30px;
-    right: 0;
-    background-color: var(--white);
-    font-size: 14px;
-    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
-    display: none;
-}
-
-.fa-angle-down:hover ~ .chat__dropdown{
-    display: block;
-}
-
-.chat-text__green{
-    background-color: var(--lightgreen);
-}
-
-.chat-text__white{
-    background-color: var(--white);
 }
 
 /* .main-bar form */
