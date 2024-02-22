@@ -136,17 +136,17 @@ body{
 }
 
 .message,
-.message.sent ~ .message.sent,
-.message.recieved ~ .message.recieved{
+.message.sent + .message.sent,
+.message.received + .message.received{
     margin: 3px 0;
 }
 
-.message.sent + .message.recieved,
-.message.recieved + .message.sent{
+.message.sent + .message.received,
+.message.receieved + .message.sent{
     margin-top: 30px;
 }
 
-.message.recieved{
+.message.received{
     background-color: var(--white);
 }
 
